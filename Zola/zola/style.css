@@ -1,0 +1,475 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: sticky;
+    top: 0  ;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    background-color: white;
+}
+header a{
+    text-decoration: none;
+    padding: 10px;
+}
+header img{
+    width: 50px;
+    display: inline;
+}
+.apresentacao {    
+    background: linear-gradient(rgba(3, 66, 255, 0.85), rgba(13, 0, 255, 0.867)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0562ee;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+
+.inicio{
+        background-color: rgb(213, 250, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+}
+
+
+.texto{
+margin-left:100px;
+/* background-color: white; */
+padding-right: 3px;
+}
+
+.texto1{
+color: rgb(0, 102, 255);
+}
+h1{
+font-size: 38px;
+}
+
+.imagem2{
+display: flex;
+margin-right: 100px;
+}
+
+.cartao img{
+    border-radius: 5%;
+}
+.cartao p{
+    text-align: center;
+}
+.cartao{
+    border: 5px rgb(38, 103, 224) solid;
+    border-radius: 5%;
+    width: 359px;
+    height: 450px;
+}
+
+h2, h3{
+    text-align: center;
+}
+h2{
+    margin-bottom: 40px;
+}
+.hero {
+  
+  text-align: center;
+  padding: 300px 20px;
+}
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.btn a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.sobre {
+    background-color: #f4f4f4;
+    padding: 5px 20px;
+    text-align: center;
+}
+.sobre-container {
+    display: flex;
+   
+    align-items: center;
+    padding: 100px 20px;
+    flex-direction: row;
+    gap: 20px;
+}
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    text-align: center;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+.sobre h1 {
+    color: #000000;
+}
+.sobre p {
+    color: #000000;
+}  
+
+.container-cards {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  gap: 20px; 
+  padding: 40px 20px;
+  flex-wrap: wrap; 
+}
+
+
+.cursos-apre {
+    padding: 60px 20px;
+    background-color: #f4f7f6;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.cursos {
+    margin-bottom: 40px;
+    color: #1a2a6c;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container em Flexbox para alinhar horizontalmente */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Garante que em ecrãs pequenos os cards baixem */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do Card */
+.card-curso {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-curso:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Imagem do Card */
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Mantém a proporção da imagem sem deformar */
+}
+
+/* Conteúdo de Texto */
+.card-content {
+    padding: 25px;
+    text-align: left;
+}
+
+.card-content h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Botão Estilizado */
+.card-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3; /* Azul padrão TI */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #003d7a;
+}
+
+
+
+.card-image img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  display: block;
+}
+
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  color: #0056b3;
+  font-size: 1.2rem;
+}
+
+.card-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cursos-apre {
+     background: linear-gradient(rgb(251, 255, 0), rgba(13, 0, 255, 0.867)), url('SEMANA\ DE\ INFO.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+}
+
+
+.contacto-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-itel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.btn-enviar {
+  background-color: #0056b3; 
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #003d80;
+}
+.atividades {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.atividades-header h2 {
+  color: #0056b3;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.galeria-atividades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.atividade-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #f4f4f4;
+}
+
+.atividade-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.atividade-card:hover img {
+  transform: scale(1.1);
+}
+
+.atividade-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.atividade-info h4 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.atividade-info p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #09ceff 0%, #1500ff 100%);
+  padding: 20px;
+}
+
+.login-box {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.login-header h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fdfdfd;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.forgot-pw {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #003d80;
+}
+
+.login-footer {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.login-footer a {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -1,0 +1,168 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: sticky;
+    top: 0  ;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    background-color: white;
+}
+header a{
+    text-decoration: none;
+    padding: 10px;
+}
+header img{
+    width: 50px;
+    display: inline;
+}
+
+.inrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.roundedImagem{
+    width: 400px;
+    border-radius: 10%;
+}
+
+.padsecao{
+    padding: 100px 50px;
+}
+
+
+.inicio{
+        background-color: rgb(213, 250, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+}
+
+
+.texto{
+margin-left:100px;
+/* background-color: white; */
+padding-right: 3px;
+}
+
+.texto1{
+color: rgb(0, 102, 255);
+}
+h1{
+font-size: 38px;
+}
+
+.imagem2{
+display: flex;
+margin-right: 100px;
+}
+
+.cartao img{
+    border-radius: 5%;
+}
+.cartao p{
+    text-align: center;
+}
+.cartao{
+    border: 5px rgb(38, 103, 224) solid;
+    border-radius: 5%;
+    width: 359px;
+    height: 450px;
+}
+
+h2, h3{
+    text-align: center;
+}
+h2{
+    margin-bottom: 40px;
+}
+
+.inrow2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.imgs img{
+    width: 50px; 
+}
+#contacto{
+    background-color: rgb(213, 250, 255);
+}
+
+#noticia{
+    background-color: rgb(213, 250, 255);
+}
+footer{
+    background-color: #003E7B;
+    color: white;
+    height: 350px;
+    padding: 30px 60px;
+}
+
+
+
+
+.cartao-ati img{
+    border-radius: 5%;
+}
+.cartao-ati p{
+    text-align: center;
+    
+}
+.cartao-ati{
+    border-radius: 5%;
+    width: 316px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgb(0, 0, 0, 0.5);
+}
+
+#Atividades{
+    background-color: rgb(9, 117, 217);
+}
+
+
+
+.cartao-ati1 img{
+    border-radius: 5%;
+}
+.cartao-ati1 p{
+    text-align: center;
+    
+    
+}
+.cartao-ati1{
+    border-radius: 5%;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+        box-shadow: 0 8px 16px rgb(0, 0, 0, 0.5);
+}
+
+
+.cartao-ati3 img{
+    border-radius: 5%;
+    width: 294px;
+    height: 200px;
+}
+.cartao-ati3 p{
+    text-align: center;
+    
+}
+.cartao-ati3{
+    
+    border-radius: 5%;
+    width: 294px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgb(0, 0, 0, 0.5);
+}
+
+.galeria img{
+    width: 300px;
+    border-radius: 10%;
+}
