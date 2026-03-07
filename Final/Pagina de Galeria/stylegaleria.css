@@ -1,0 +1,165 @@
+/*Estilização Geral*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.body1{
+    display: flex;
+    flex-direction: row; /*para q a navbar e as imagens fiquem lado a lado */
+    align-items: flex-start;
+    background-color: #f4f4f4;
+}
+
+
+
+/*Header Estilização*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    background-color: white;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    padding: 10px;
+    color: #0f172a;
+    font-weight: 500;
+}
+
+header img {
+    width: 50px;
+    display: inline;
+}
+
+
+
+
+/*Estilização do SideBar*/
+
+.sidebar ul { 
+    list-style: none; padding: 0; 
+}
+.sidebar li {
+    margin-bottom: 15px; 
+}
+.sidebar a {
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+.sidebar a:hover { 
+    color: rgb(69, 25, 229);
+     font-weight: bold; 
+    }
+
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: sticky; /* Faz o menu colar na tela */
+    top: 0;
+    padding: 60px 25px;
+    background: white;
+    border-right: 1px solid #ddd;
+}
+
+
+
+
+
+/*Estilização do conteudo principal*/
+.conteudo-principal {
+    flex: 1; /* Faz a galeria ocupar todo o espaço restante */
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 60px;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    border-left: 5px solid rgb(69, 25, 229);;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+/*bento-grid... Um tipo de display q organiza em colunas... q nem no bootstrap */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+}
+
+/* O Container da Foto */
+.foto-item {
+    border-radius: 15px;
+    overflow: hidden; /* Corta a imagem que sobrar do zoom */
+    position: relative;
+    background-color: #ddd;
+    display: flex;
+    box-shadow: 5px 8px 16px rgb(0, 0, 0, 0.5);
+}
+
+/* O Ajusta a Foto no seu container*/
+.foto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.foto-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Estilização das direções/tamanhos... aqui vc escolhe o tamanho dos filhos do container Bento-grid, tipo os col do bootstrap*/
+.grande-v { 
+    grid-row: span 2;
+} 
+.grande-h {
+    grid-column: span 2; 
+} 
+.quadrado { 
+    grid-column: span 1; grid-row: span 1; 
+}
+.destaque { 
+    grid-column: span 2; grid-row: span 2; 
+}
+
+/* Cores de fallback apenas para os itens q estao sem foto ainda */
+.grande-v {
+    background-color: #7ed6df; 
+}
+.grande-h { 
+    background-color: #e056fd; 
+}
+.quadrado { 
+    background-color: #686de0; 
+}
+.destaque { 
+    background-color: #f0932b; 
+}
