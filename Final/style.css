@@ -1,150 +1,277 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+/*Formatações Gerais*/
 
-        body {
-            background-color: rgb(38, 103, 224);
-            color: white;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        /* ===== HEADER ===== */
-        header {
-            display: flex;
-            justify-content: space-between;
-            padding: 5px 30px;
-            position: sticky;
-            top: 0;
-            align-items: center;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-            background-color: white;
-            z-index: 10000;
-        }
+body{
+    background-color: #f4f4f4;
+}
+/*definições básicas para todas as secções*/ 
+.secao{
+    margin: 100px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-        header a {
-            text-decoration: none;
-            padding: 10px;
-            color: #0f172a;
-            font-weight: 500;
-        }
+h1{
+    color: white;
+}
+h2{
+    text-align: center;
+}
 
-        header img {
-            width: 50px;
-            display: inline;
-        }
+.subtitle{
+    text-align: center;
+    font-weight: 2px;
+    margin-bottom: 25px;
+}
 
-        /* ===== HERO ===== */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(rgba(135, 161, 220, 0.85), rgba(127, 158, 230, 0.95)),
-                        url('imagens/ITELfoto.jpeg') center/cover;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .hero h1 {
-            font-size: 3rem;
-            max-width: 800px;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
 
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 40px;
-            color: #cbd5e1;
-        }
 
-        .cursos {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
 
-        /* Cards do Hero (com overlay e texto sobre a imagem) */
-        .card {
-            position: relative;          /* ESSENCIAL para o overlay e texto */
-            width: 260px;
-            border-radius: 18px;
-            overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-            transition: 0.4s ease;
-            cursor: pointer;
-            background: transparent;      /* remove fundo branco */
-        }
 
-        .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.4s ease;
-        }
+/*Navbar*/
 
-        .card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 45px rgba(37,99,235,0.4);
-        }
 
-        .card:hover img {
-            transform: scale(1.1);
-        }
 
-        /* Overlay escuro sobre a imagem */
-        .card::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 1;
-            pointer-events: none;
-        }
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    background-color: white;
+    z-index: 1000;
+}
 
-        /* Texto do card */
-        .card span {
-            position: absolute;
-            bottom: 15px;
-            left: 15px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            color: white;
-            z-index: 2;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-        }
+header a {
+    text-decoration: none;
+    padding: 10px;
+    color: #0f172a;
+    font-weight: 500;
+}
 
-        .btn {
-            padding: 14px 35px;
-            border: none;
-            border-radius: 30px;
-            background: #2563eb;
-            color: white;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+header img {
+    width: 50px;
+    display: inline;
+}
 
-        .btn:hover {
-            background: #1d4ed8;
-        }
 
-        .scroll {
-            margin-top: 25px;
-            font-size: 0.9rem;
-            color: #94a3b8;
-            animation: bounce 2s infinite;
-        }
 
-        @keyframes bounce {
-            0%,20%,50%,80%,100% { transform: translateY(0); }
-            40% { transform: translateY(8px); }
-            60% { transform: translateY(4px); }
-        }
+
+
+
+
+/*Seção Hero*/
+
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.95)),
+    url('imagens/ITELfoto.jpeg') center/cover;
+}
+
+.hero h1{
+    font-size:3rem;
+    max-width:800px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:600px;
+    margin-bottom:40px;
+    color:#cbd5e1;
+}
+
+
+
+.cursos{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:50px;
+}
+
+.card{
+    color: #ffffff;
+    width:260px;
+    background:#ffffff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    transition:0.4s ease;
+    cursor:pointer;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:20px 15px;
+    font-size:1.2rem;
+    color:#0f172a;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(37,99,235,0.4);
+}
+
+
+.card::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+}
+
+.card span{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    font-weight:bold;
+    font-size:1.1rem;
+    z-index:2;
+}
+
+
+.card:hover img{
+    transform:scale(1.1);
+}
+
+.scroll{
+    margin-top:25px;
+    font-size:0.9rem;
+    color:#94a3b8;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,20%,50%,80%,100%{transform:translateY(0);}
+    40%{transform:translateY(8px);}
+    60%{transform:translateY(4px);}
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*Seção Galeria*/
+
+
+/*bento-grid... Um tipo de display q organiza em colunas... q nem no bootstrap */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+}
+
+/* O Container da Foto */
+.foto-item {
+    border-radius: 15px;
+    overflow: hidden; /* Corta a imagem que sobrar do zoom */
+    position: relative;
+    background-color: #ddd;
+    display: flex;
+    box-shadow: 5px 8px 16px rgb(0, 0, 0, 0.5);
+}
+
+/* O Ajusta a Foto no seu container*/
+.foto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.foto-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Estilização das direções/tamanhos... aqui vc escolhe o tamanho dos filhos do container Bento-grid, tipo os col do bootstrap*/
+.grande-v { 
+    grid-row: span 2;
+} 
+.grande-h {
+    grid-column: span 2; 
+} 
+.quadrado { 
+    grid-column: span 1; grid-row: span 1; 
+}
+.destaque { 
+    grid-column: span 2; grid-row: span 2; 
+}
+
+/* Cores de fallback apenas para os itens q estao sem foto ainda */
+.grande-v {
+    background-color: #7ed6df; 
+}
+.grande-h { 
+    background-color: #e056fd; 
+}
+.quadrado { 
+    background-color: #686de0; 
+}
+.destaque { 
+    background-color: #f0932b; 
+}
+
+.botao{
+    margin-top: 40px;
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:#2563eb;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+    display: flex;
+}
+
+.botao:hover{
+    background:#1d4ed8;
+}
+
+.botao a{
+    text-decoration: none;
+    color: white;
+}
