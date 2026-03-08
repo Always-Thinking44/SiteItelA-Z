@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Itel - Cursos Detalhados</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<title>Itel - Cursos</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
-body { overflow-x:hidden; color:white; background:#0b1f5a; position:relative; }
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { overflow-x:hidden; color:white; background:#0F172A; position:relative; }
 
 header {
             display: flex;
@@ -66,49 +65,28 @@ header {
     z-index:1000;
     box-shadow:0 5px 10px rgba(0,0,0,0.3);
 }
-.logo-itel {
-    width:100px;
-    cursor:pointer;
-    padding:5px;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    background-color: white;
+    z-index: 1000;
 }
 
-nav {
-    display:flex;
-    gap:25px;
-    align-items:center;
-    background: white;
+header a {
+    text-decoration: none;
+    padding: 10px;
+    color: #0f172a;
+    font-weight: 500;
 }
-nav a {
-    color:#030303;
-    text-decoration:none;
-    font-weight:bold;
-    padding:5px 10px;
-    position:relative;
-}
-nav a:hover { color:#facc15; }
-nav .dropdown {
-    position:relative;
-}
-nav .dropdown-content {
-    display:none;
-    position:absolute;
-    top:35px;
-    left:0;
-    background:rgba(11,31,90,0.95);
-    border-radius:10px;
-    min-width:150px;
-    z-index:1001;
-    flex-direction:column;
-    box-shadow:0 5px 20px rgba(0,0,0,0.5);
-}
-nav .dropdown-content a {
-    padding:10px;
-    display:block;
-    color:white;
-}
-nav .dropdown:hover .dropdown-content {
-    display:flex;
-    flex-direction:column;
+
+header img {
+    width: 50px;
+    display: inline;
 }
 
 /* ===== Carrossel Topo 3D surreal ===== */
@@ -146,12 +124,12 @@ nav .dropdown:hover .dropdown-content {
     50% {transform: translateY(-15px) rotateX(10deg) rotateY(15deg);}
 }
 @keyframes glow {
-    0% {box-shadow:0 0 20px #facc15;}
-    100% {box-shadow:0 0 50px #facc15;}
+    0% {box-shadow:0 0 20px #2256a0;}
+    100% {box-shadow:0 0 50px #045df7;}
 }
 .carousel-card:hover {
     transform: translateY(-20px) rotateX(20deg) rotateY(-20deg) scale(1.1);
-    box-shadow:0 0 80px #fff500,0 0 100px #ff00ff,0 0 120px #00ffff;
+    box-shadow:0 0 80px #00fffb,0 0 100px #ff00ff,0 0 120px #00ffff;
 }
 .carousel-card img {
     width:80px;
@@ -172,14 +150,11 @@ nav .dropdown:hover .dropdown-content {
 }
 .course-section h2 {
     font-size:2.5rem;
-    color:#facc15;
-    text-shadow:0 0 10px #fff,0 0 20px #ff0;
+    color:#ffffff;
+    text-shadow:0 0 10px #01487e;
     animation: neonText 1.5s infinite alternate;
 }
-@keyframes neonText {
-    0%{text-shadow:0 0 5px #fff,0 0 10px #ff0;}
-    100%{text-shadow:0 0 20px #fff,0 0 40px #ff0,0 0 60px #ff0;}
-}
+
 .course-section p {
     font-size:1.2rem;
     max-width:800px;
@@ -206,16 +181,16 @@ nav .dropdown:hover .dropdown-content {
     padding:12px 30px;
     border:none;
     border-radius:50px;
-    background:#facc15;
-    color:#0f172a;
+    background:#64748b;
+    color:#000000;
     font-weight:bold;
     cursor:pointer;
     transition:0.3s;
     box-shadow:0 0 20px #fff;
 }
 .btn-inscrever:hover {
-    background:#eab308;
-    box-shadow:0 0 40px #fff,0 0 60px #ff0,0 0 80px #ff0;
+    background:#0458cf;
+    box-shadow: whitesmoke;
 }
 
 /* ===== Modal ===== */
@@ -230,14 +205,13 @@ nav .dropdown:hover .dropdown-content {
     backdrop-filter:blur(5px);
 }
 .modal-content {
-    background:radial-gradient(circle,#0b1f5a,#2647e0);
-    color:#facc15;
+    background:#021d5c9f;
+    color:#efefef;
     margin:10% auto;
     padding:30px;
-    border-radius:40px;
+    border-radius:5px;
     width:90%;
     max-width:500px;
-    box-shadow:0 0 50px #fff;
     animation: modalFloat 2s infinite alternate;
 }
 @keyframes modalFloat {
@@ -245,7 +219,7 @@ nav .dropdown:hover .dropdown-content {
     100%{transform:translateY(-10px) rotateX(5deg);}
 }
 .close-btn {color:#fff; float:right; font-size:1.5rem; font-weight:bold; cursor:pointer;}
-.close-btn:hover {color:#ff0;}
+.close-btn:hover {color:#e1e1e1;}
 .form-control {margin-bottom:15px; background:rgba(255,255,255,0.1); border:none; color:white;}
 
 /* ===== Botão voltar ao topo ===== */
@@ -267,7 +241,7 @@ nav .dropdown:hover .dropdown-content {
 }
 @keyframes glowBtn {
     0%{box-shadow:0 0 20px #fff;}
-    100%{box-shadow:0 0 50px #ff0,0 0 80px #ff0;}
+    100%{box-shadow:0 0 50px #0F172A,0 0 80px #2563EB;}
 }
 .btn-top:hover { background:#1d4ed8; }
 
@@ -281,30 +255,30 @@ nav .dropdown:hover .dropdown-content {
 <!-- ===== Header/Nav ===== -->
 <header>
         <div>
-            <img src="img/ITEL.jpg" alt="Imagem do itel">
+            <img src="/Final/cursos/img/image.png" alt="Imagem do itel">
             
         </div>
         <nav>
-            <a href="#inicio">Início</a>
-            <a href="#cursos">Cursos</a>
+            <a href="/Final/index.html">Início</a>
+            <a href="cursos.html">Cursos</a>
             <a href="#contacto">Contacto</a>
             <a href="login.html">Login</a>
             <a href="#noticia">Noticia</a>
         </nav>
-    </header>
+</header>
 
 <!-- ===== Carrossel Topo ===== -->
 <div class="top-carousel">
     <div class="carousel-card" data-target="curso1">
-        <img src="img/electronica.png" alt="Eletrônica">
+        <img src="/Final/cursos/img/electronica.png" alt="Eletrônica">
         Eletrônica
     </div>
     <div class="carousel-card" data-target="curso2">
-        <img src="img/informatica.jpg" alt="Informática">
+        <img src="/Final/cursos/img/informatica.jpg" alt="Informática">
         Informática
     </div>
     <div class="carousel-card" data-target="curso3">
-        <img src="img/multimedia.png" alt="Multimédia">
+        <img src="/Final/cursos/img/multimedia.png" alt="Multimédia">
         Multimédia
     </div>
 </div>
@@ -313,21 +287,21 @@ nav .dropdown:hover .dropdown-content {
 <section id="curso1" class="course-section">
     <h2>Eletrônica</h2>
     <p>Aprenda fundamentos da eletrônica, circuitos, projetos práticos, aplicações modernas e como inovar em sistemas complexos. Nossos laboratórios são equipados com tecnologias de ponta para experiências reais.</p>
-    <img src="img/electronica.png" alt="Laboratório de Eletrônica">
+    <img src="/Final/cursos/img/electronica.png" alt="Laboratório de Eletrônica">
     <button class="btn-inscrever" onclick="abrirModal('Eletrônica')">Inscreva-se</button>
 </section>
 
 <section id="curso2" class="course-section">
     <h2>Informática</h2>
     <p>Domine programação, redes, sistemas, segurança digital e tecnologias emergentes. Prepare-se para o mercado global com projetos desafiadores, hackathons e workshops práticos.</p>
-    <img src="img/informatica.jpg" alt="Laboratório de Informática">
+    <img src="/Final/cursos/img/informatica.jpg" alt="Laboratório de Informática">
     <button class="btn-inscrever" onclick="abrirModal('Informática')">Inscreva-se</button>
 </section>
 
 <section id="curso3" class="course-section">
     <h2>Multimédia</h2>
     <p>Explore criação de conteúdos digitais, design gráfico, edição de vídeo, animação 3D e realidade virtual. Desenvolva portfólios incríveis com feedbacks de profissionais do setor.</p>
-    <img src="img/multimedia.png" alt="Laboratório de Multimédia">
+    <img src="/Final/cursos/img/multimedia.png" alt="Laboratório de Multimédia">
     <button class="btn-inscrever" onclick="abrirModal('Multimédia')">Inscreva-se</button>
 </section>
 
@@ -375,7 +349,7 @@ window.addEventListener('scroll', () => {
 
 // ===== Fundo dinâmico aleatório =====
 const bgLayer = document.getElementById('bgLayer');
-const imgs = ['img/electronica.png','img/informatica.jpg','img/multimedia.png'];
+const imgs = ['img/electronica.png','img/multimedia.png','img/informatica.jpg','img/ITELfoto.jpeg','img/image.png'];
 for(let i=0;i<20;i++){
     const img = document.createElement('img');
     img.src = imgs[Math.floor(Math.random()*imgs.length)];
