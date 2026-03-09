@@ -560,7 +560,9 @@ display:flex;
 justify-content:space-between;
 margin-bottom:40px;
 }
-
+.topo-noticias h1{
+    color: #000000;
+}
 .voltar{
 text-decoration:none;
 color:#2563EB;
