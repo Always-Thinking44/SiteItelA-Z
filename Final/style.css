@@ -635,3 +635,63 @@ right:20px;
 font-size:30px;
 cursor:pointer;
 }
+/* FUNDO DO MODAL */
+.modal-noticia{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+padding:20px;
+z-index:999;
+}
+
+/* CAIXA DO MODAL */
+.modal-conteudo{
+background:white;
+width:90%;
+max-width:850px;
+max-height:90vh;
+overflow-y:auto;
+border-radius:12px;
+padding:25px;
+position:relative;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* IMAGEM */
+.modal-conteudo img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+/* TITULO */
+#modal-titulo{
+font-size:26px;
+margin-bottom:15px;
+color:#0f172a;
+}
+
+/* TEXTO */
+#modal-texto{
+line-height:1.7;
+color:#475569;
+text-align:justify;
+}
+
+/* BOTÃO FECHAR */
+.fechar{
+position:absolute;
+top:15px;
+right:20px;
+font-size:28px;
+cursor:pointer;
+color:#333;
+}
