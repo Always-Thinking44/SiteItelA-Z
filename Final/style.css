@@ -868,134 +868,197 @@ color:#333;
 /* Secção directores*/
 
 
-/* TITULO */
 
-.timeline h1{
-text-align:center;
-color:#0F172A;
+#diretores{
+    background: linear-gradient(rgba(93, 141, 255, 0.79), rgba(4, 46, 145, 0.803)),
+    url('imagens/bg.png') center/cover;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    
 }
 
-.descricao{
-text-align:center;
-margin-bottom:60px;
-}
-
-
-/* LINHA CENTRAL */
 
 .timeline{
-position:relative;
-max-width:1000px;
-margin:auto;
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timeline-img{
+    border-radius: 50%;
+    border-color: white;
+    width: 150px;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /*background-color: rgb(0, 0, 0, 0.3); helped in the beggining*/
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+    z-index: 3;
+}
+    @keyframes movedown{
+        0%{
+            opacity: 1;
+            transform: translateY(-30px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+
+.container:nth-child(6){
+    animation-delay: 5s;
+}
+
+.text-box{
+    padding: 20px 30px;
+    background-color: #ffff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    right:-43px ;
+    top: 32px;
+    z-index: 10;
+    width: 80px;
+}
+
+.right-container img{
+    left: -43px;
 }
 
 .timeline::after{
-content:'';
-position:absolute;
-width:4px;
-background:#2563EB;
-top:4rem;
-bottom:0;
-left:50%;
-margin-left:-2px;
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    top: 0;
+    background-color: #ffff;
+    left: 50%;
+    margin-left: -3px;
+    animation: moveline 6s linear forwards;
 }
 
 
-/* CONTAINERS */
-
-.container{
-padding:20px 40px;
-position:relative;
-width:50%;
-}
-
-.left{
-left:0;
-text-align:right;
-}
-
-.right{
-left:50%;
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
 }
 
 
-/* FOTO */
 
-.avatar{
-width:90px;
-height:90px;
-border-radius:50%;
-border:5px solid white;
-cursor:pointer;
-transition:0.3s;
+
+.text-box h2{
+    font-weight: 600;
+}
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -14px;
 }
 
-.avatar:hover{
-transform:scale(1.1);
-}
-
-
-/* CARD */
-
-.content{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-
-/* MODAL */
-
-.modal{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.7);
-opacity:0;
-pointer-events:none;
-transition:0.4s;
-}
-
-.modal:target{
-opacity:1;
-pointer-events:auto;
-}
-
-.modal-content{
-background:white;
-width:500px;
-margin:8% auto;
-padding:30px;
-border-radius:10px;
-text-align:center;
-position:relative;
-}
-
-.modal-content img{
-width:120px;
-height:120px;
-border-radius:50%;
-margin-bottom:10px;
-}
-
-.close{
-position:absolute;
-right:20px;
-top:10px;
-font-size:30px;
-text-decoration:none;
-color:black;
-}
-
-.cargo{
-font-weight:bold;
-color:#2563EB;
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -14px;
 }
 
 
+
+
+
+
+
+@media screen and (max-width:600px){
+   .timeline{
+    margin: 50px auto;
+   }
+   .timeline::after{
+    left: 31px;
+   }
+   .container{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+   }
+   text-box{
+    font-size: 13px;
+   }
+   .text-box small{
+    margin-bottom: 10px;
+   }
+
+   .right-container{
+    left: 0px;
+   }
+
+   .left-container img, .right-container img{
+    left: 10px;
+   }
+
+   .left-container-arrow, .right-container-arrow{
+    border-right: 15pd solid #fff;
+    border-left: 0;
+    left: -15px;
+   }
+
+}
 
 
 
