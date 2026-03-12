@@ -51,11 +51,7 @@ html {
 
 
 
-/*Navbar*/
-
-
-
-/* ===== HEADER ===== */
+/* HEADER */
 
 header {
     display: flex;
@@ -97,7 +93,7 @@ header a:hover {
     color: #2563EB;
 }
 
-/* ===== DROPDOWN ===== */
+/* DROPDOWN */
 
 .dropdown {
     position: relative;
@@ -1199,6 +1195,10 @@ color:#333;
         width:220px;
     }
 
+    .left-container-arrow{
+        display: none;
+    }
+
 }
 
 
@@ -1323,6 +1323,10 @@ color:#333;
         max-width:400px;
     }
 
+    #img1{
+        display: none;
+    }
+
 }
 
 
@@ -1422,6 +1426,31 @@ color:#333;
 
     .curso-slide{
         max-width:100%;
+    }
+    #img1{
+        display: none;
+    }
+
+    .dropdownResponsivo{
+        position: relative;
+    }
+    
+    .dropdownResponsivo-menu{
+        position: absolute;
+    top: 40px;
+    left: 0;
+
+    background: #FFFFFF;
+    min-width: 180px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: 0.3s ease;
     }
 
 
