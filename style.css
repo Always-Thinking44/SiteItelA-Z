@@ -13,9 +13,13 @@ body{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*definições básicas para todas as secções*/ 
 .secao{
-    padding: 80px 150px;
+    padding: 80px 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -888,9 +892,12 @@ color:#333;
     background-attachment: fixed;
     background-size: cover;
     margin: 0px;
-    
 }
-
+.diretorestitle{
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
 
 .timeline{
     position: relative;

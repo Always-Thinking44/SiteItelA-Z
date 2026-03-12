@@ -12,21 +12,31 @@
 </head>
 <body>
 
-    <button class="botao-voltar" onclick="history.back()">
-    ← Voltar
-</button>
-    <header>
+
+    <header id="home">
         <div>
-            <img src="../imagens/image.png" alt="Imagem do itel">
-            
+            <a href="../index.html"><img src="../imagens/image.png" alt="Imagem do ITEL"></a>
         </div>
+
         <nav>
-            <a href="../index.html#inicio">Início</a>
-            <a href="../index.html#cursos">Cursos</a>
-            <a href="../index.html#contacto">Contacto</a>
-            <a href="login.html">Login</a>
-            <a href="../index.html#noticia">Noticia</a>
+            <a href="../index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Sobre ▾</a>
+                <div class="dropdown-menu">
+                    <a href="../index.html#galeria">Galeria</a>
+                    <a href="../index.html#cursos">Cursos</a>
+                    <a href="../index.html#noticias">Notícias</a>
+                    <a href="../index.html#actividades">Actividades</a>
+                    <a href="../index.html#diretores">Directores</a>
+                    <a href="../index.html#parceiros">Parceiros</a>
+                </div>
+            </div>
+
+            <a href="#contacto">Contacto</a>
+            <a href="../Login/Login.html">Login</a>
+
         </nav>
+
     </header>
 
     <div class="body1">

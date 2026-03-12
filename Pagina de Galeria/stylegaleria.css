@@ -46,6 +46,8 @@ body {
 }
 
 /*Header Estilização*/
+/* ===== HEADER ===== */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -58,16 +60,81 @@ header {
     z-index: 1000;
 }
 
-header a {
-    text-decoration: none;
-    padding: 10px;
-    color: #0f172a;
-    font-weight: 500;
-}
+/* Logo */
 
 header img {
     width: 50px;
-    display: inline;
+}
+
+/* NAV */
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Links */
+
+header a {
+    text-decoration: none;
+    padding: 10px 12px;
+    color: #0F172A;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #2563EB;
+}
+
+/* ===== DROPDOWN ===== */
+
+.dropdown {
+    position: relative;
+}
+
+/* Menu escondido */
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+    background: #FFFFFF;
+    min-width: 180px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: 0.3s ease;
+}
+
+/* Links do dropdown */
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #0F172A;
+}
+
+/* Hover nos links */
+
+.dropdown-menu a:hover {
+    background: #F4F4F4;
+    color: #2563EB;
+}
+
+/* Mostrar dropdown */
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 
