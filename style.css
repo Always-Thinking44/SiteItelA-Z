@@ -328,7 +328,7 @@ header a:hover {
     grid-column: span 2; grid-row: span 2; 
 }
 
-/* Cores de fallback apenas para os itens q estao sem foto ainda */
+/* Cores de fallback(bg ) apenas para os itens q estao sem foto ainda */
 .grande-v {
     background-color: #7ed6df; 
 }
@@ -393,7 +393,7 @@ header a:hover {
   -webkit-overflow-scrolling: touch;
   padding-bottom:10px;
   display: flex;
-  justify-content: center; /* Alinha horizontalmente */
+  justify-content: center; 
   align-items: center; 
 }
 
@@ -405,7 +405,7 @@ header a:hover {
 
 /* Cada curso */
 .curso-slide{
-  flex:0 0 280px; /* largura fixa para scroll snap */
+  flex:0 0 280px; 
   background:#FFFFFF;
   border-radius:12px;
   box-shadow:0 5px 15px rgba(0,0,0,0.1);
@@ -483,10 +483,10 @@ header a:hover {
 }
 
 .modal-conteudo-curso img{
-    width: 100%;          /* ocupa toda a largura disponível */
-  max-height: 400px;    /* não fica gigantesca verticalmente */
-  height: auto;         /* mantém proporção natural */
-  object-fit: cover;    /* corta se necessário para preencher a largura */
+    width: 100%;         
+  max-height: 400px;    
+  height: auto;         
+  object-fit: cover;   
   border-radius: 8px;
   margin-bottom: 20px;
   display: block;
@@ -915,7 +915,6 @@ color:#333;
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    /*background-color: rgb(0, 0, 0, 0.3); helped in the beggining*/
     animation: movedown 1s linear forwards;
     opacity: 0;
     z-index: 3;
@@ -1154,257 +1153,281 @@ color:#333;
     font-size: 0.85rem;
     color: #a0aec0;
 }
-/* =================== RESPONSIVIDADE =================== */
 
-/* ----- Telas até 1200px (Laptops grandes / Tablets landscape) ----- */
-@media screen and (max-width: 1200px) {
-    .secao {
-        padding: 60px 100px;
+
+
+
+
+
+/* Responsividade */
+
+@media screen and (max-width:992px){
+
+    .secao{
+        padding:50px 50px;
     }
 
-    .bento-grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 220px;
+    /* Hero */
+
+    .hero h1{
+        font-size:2.5rem;
     }
 
-    .carousel-wrapper {
-        justify-content: flex-start;
-        padding: 10px;
+    /* Cursos */
+
+    .curso-slide{
+        flex:0 0 240px;
     }
 
-    .cards-container {
-        gap: 25px;
+    /* Notícias */
+
+    .noticia-img{
+        height:180px;
     }
 
-    .footer-container {
-        grid-template-columns: repeat(2, 1fr);
+    .noticia-corpo h3{
+        font-size:1.15rem;
     }
 
-    .timeline {
-        max-width: 95%;
+    .noticia-corpo p{
+        font-size:0.9rem;
     }
+
+    /* Actividades */
+
+    .card{
+        width:220px;
+    }
+
 }
 
-/* ----- Telas até 992px (Tablets) ----- */
-@media screen and (max-width: 992px) {
-    .secao {
-        padding: 50px 50px;
+
+
+@media screen and (max-width:768px){
+
+    .secao{
+        padding:40px 30px;
     }
 
-    .bento-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 200px;
+    /* NAVBAR */
+
+    header nav{
+        flex-wrap:wrap;
+        gap:10px;
     }
 
-    .cursos-carousel {
-        padding: 30px 20px;
+    /* HERO */
+
+    .hero h1{
+        font-size:2rem;
     }
 
-    .carousel-wrapper {
-        gap: 15px;
-        padding-bottom: 10px;
+    .hero p{
+        font-size:1rem;
     }
 
-    .curso-slide {
-        flex: 0 0 240px;
+    /* GALERIA */
+
+    .bento-grid{
+        grid-template-columns:1fr;
+        grid-auto-rows:180px;
     }
 
-    .cards-container {
-        gap: 20px;
+    /* CURSOS */
+
+    .curso-slide{
+        flex:0 0 220px;
     }
 
-    .card {
-        width: 220px;
+    .curso-slide img{
+        height:150px;
     }
 
-    .timeline {
-        margin: 70px auto;
+    .curso-slide h3{
+        font-size:1rem;
     }
 
-    .container {
-        width: 100%;
-        padding-left: 60px;
-        padding-right: 20px;
+    .curso-slide p{
+        font-size:0.85rem;
     }
 
-    .text-box {
-        font-size: 14px;
-        padding: 15px 20px;
+    /* NOTÍCIAS */
+
+    .noticias-grid{
+        grid-template-columns:1fr;
     }
 
-    .text-box small {
-        margin-bottom: 8px;
+    .noticia-img{
+        height:170px;
     }
 
-    .left-container-arrow,
-    .right-container-arrow {
-        top: 25px;
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;
-        border-left: 12px solid white;
-        right: -12px;
+    .noticia-corpo h3{
+        font-size:1.1rem;
     }
 
-    .right-container-arrow {
-        left: -12px;
-        border-left: 0;
-        border-right: 12px solid white;
+    .noticia-corpo p{
+        font-size:0.9rem;
     }
 
-    .botao-voltar {
-        top: 70px;
-        left: auto;
-        right: 20px;
-        padding: 8px 16px;
-        font-size: 13px;
-    }
-}
+    /* ACTIVIDADES */
 
-/* ----- Telas até 768px (Tablets / Mobile) ----- */
-@media screen and (max-width: 768px) {
-    .secao {
-        padding: 40px 30px;
+    .card{
+        width:200px;
     }
 
-    .hero h1 {
-        font-size: 2rem;
+    /* TIMELINE */
+
+    .timeline::after{
+        left:20px;
     }
 
-    .hero p {
-        font-size: 1rem;
+    .container{
+        width:100%;
+        padding-left:50px;
     }
 
-    header nav {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .bento-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 180px;
-    }
-
-    .carousel-wrapper {
-        overflow-x: scroll;
-        justify-content: flex-start;
-    }
-
-    .curso-slide {
-        flex: 0 0 200px;
-    }
-
-    .cards-container {
-        gap: 15px;
-    }
-
-    .card {
-        width: 200px;
-    }
-
-    .timeline::after {
-        left: 20px;
-    }
-
-    .container {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 15px;
-    }
-
-    .right-container {
-        left: 0 !important;
+    .right-container{
+        left:0 !important;
     }
 
     .left-container img,
-    .right-container img {
-        left: 10px;
-        width: 60px;
+    .right-container img{
+        left:10px;
+        width:60px;
     }
 
-    .left-container-arrow,
-    .right-container-arrow {
-        left: -10px;
-        border-left: 0;
-        border-right: 10px solid white;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
+    /* FOOTER */
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
     }
 
-    .botao-voltar {
-        top: auto;
-        bottom: 20px;
-        right: 15px;
-        padding: 8px 14px;
-        font-size: 13px;
+    .footer-nav ul li{
+        display:inline-block;
+        margin:5px 10px;
     }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .carousel-wrapper{
+        overflow-x:visible;
     }
 
-    .footer-nav ul li {
-        display: inline-block;
-        margin: 5px 10px;
+    .carousel{
+        flex-direction:column;
+        align-items:center;
     }
+
+    .curso-slide{
+        flex:none;
+        width:100%;
+        max-width:400px;
+    }
+
 }
 
-/* ----- Telas até 480px (Mobile) ----- */
-@media screen and (max-width: 480px) {
-    .secao {
-        padding: 30px 15px;
+
+
+
+
+@media screen and (max-width:480px){
+
+    .secao{
+        padding:30px 15px;
     }
 
-    .hero h1 {
-        font-size: 1.5rem;
+    /* NAVBAR */
+
+    header nav{
+        flex-direction:column;
+        gap:5px;
     }
 
-    .hero p {
-        font-size: 0.9rem;
+    /* HERO */
+
+    .hero h1{
+        font-size:1.5rem;
     }
 
-    header nav {
-        flex-direction: column;
-        gap: 5px;
+    .hero p{
+        font-size:0.9rem;
     }
 
-    .card {
-        width: 180px;
+    /* CURSOS */
+
+    .curso-slide{
+        flex:0 0 180px;
     }
 
-    .curso-slide {
-        flex: 0 0 180px;
+    .curso-slide img{
+        height:130px;
     }
 
-    .bento-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 150px;
+    .curso-slide h3{
+        font-size:0.95rem;
     }
 
-    .timeline {
-        margin: 50px auto;
+    .curso-slide p{
+        font-size:0.8rem;
     }
 
-    .container {
-        padding-left: 40px;
+    /* NOTÍCIAS */
+
+    .noticia-img{
+        height:150px;
     }
 
-    .text-box {
-        font-size: 13px;
-        padding: 10px 15px;
+    .noticia-corpo{
+        padding:15px;
+    }
+
+    .noticia-corpo h3{
+        font-size:1rem;
+    }
+
+    .noticia-corpo p{
+        font-size:0.85rem;
+    }
+
+    .data{
+        font-size:0.75rem;
+    }
+
+    /* ACTIVIDADES */
+
+    .card{
+        width:180px;
+    }
+
+    /* GALERIA */
+
+    .bento-grid{
+        grid-auto-rows:150px;
+    }
+
+    /* TIMELINE */
+
+    .container{
+        padding-left:40px;
+    }
+
+    .text-box{
+        font-size:13px;
+        padding:10px 15px;
     }
 
     .left-container img,
-    .right-container img {
-        width: 50px;
+    .right-container img{
+        width:50px;
     }
 
-    .botao-voltar {
-        padding: 6px 12px;
-        font-size: 12px;
+    .curso-slide{
+        max-width:100%;
     }
 
-    .footer-container {
-        gap: 20px;
-    }
+
+}
+
+html,body{
+    max-width:100%;
+    overflow-x:hidden;
 }
