@@ -14,35 +14,30 @@
 
 <body>
     <header id="home">
-
-    <div>
-        <img src="imagens/image.png" alt="Imagem do ITEL">
-    </div>
-
-    <nav>
-
-        <a href="#">Home</a>
-
-        <div class="dropdown">
-            <a href="#">Sobre ▾</a>
-
-            <div class="dropdown-menu">
-                <a href="#galeria">Galeria</a>
-                <a href="#cursos">Cursos</a>
-                <a href="#noticias">Notícias</a>
-                <a href="#actividades">Actividades</a>
-                <a href="#diretores">Directores</a>
-                <a href="#parceiros">Parceiros</a>
-
-            </div>
+        <div>
+            <img src="imagens/image.png" alt="Imagem do ITEL">
         </div>
 
-        <a href="#contacto">Contacto</a>
-        <a href="Login/Login.html">Login</a>
+        <nav>
+            <a href="#">Home</a>
+            <div class="dropdown">
+                <a href="#">Sobre ▾</a>
+                <div class="dropdown-menu">
+                    <a href="#galeria">Galeria</a>
+                    <a href="#cursos">Cursos</a>
+                    <a href="#noticias">Notícias</a>
+                    <a href="#actividades">Actividades</a>
+                    <a href="#diretores">Directores</a>
+                    <a href="#parceiros">Parceiros</a>
+                </div>
+            </div>
 
-    </nav>
+            <a href="#contacto">Contacto</a>
+            <a href="Login/Login.html">Login</a>
 
-</header>
+        </nav>
+
+    </header>
 
 
 
@@ -74,92 +69,69 @@
             <div class="scroll">↓ Role para descobrir mais ↓</div>
         </section>
 
-
-
-
-
-        <section id="galeria" class="secao">
-            <h2>Galeria</h2>
-            <p class="subtitle">Aqui estão algumas fotos nossas</p>
-            <div class="bento-grid">
-                <div class="foto-item grande-v" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/Alunos.jpg" alt=""></div>
-                <div class="foto-item grande-h" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/42 4.jpeg" alt=""></div>
-                <div class="foto-item quadrado" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/Africa Fevereiro8.jpeg" alt=""></div>
-                <div class="foto-item quadrado" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/DG.jpg" alt=""></div>
-                <div class="foto-item grande-h" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/DreamSpace Itel6.jpeg" alt=""></div>
-            </div>
-            
-            <button class="botao"><a href="Pagina de Galeria/Galeria.html">Veja Mais fotos</a></button>
-               
-        </section>
             
         <!--Cursos secção-->
         <section class="cursos-carousel" id="cursos">
+            <h2>Cursos do ITEL</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel">
 
-<h1>Cursos do ITEL</h1>
+                    <!-- Curso 1 -->
+                    <div class="curso-slide">
+                    <img src="cursos/img/informatica.jpg" alt="Curso Informática">
+                    <h3>Informática</h3>
+                    <p>Programação, redes e sistemas.</p>
+                    <a href="#modal1" class="mais-info">mais info</a>
+                    </div>
 
-<div class="carousel-wrapper">
-    <div class="carousel">
+                    <!-- Curso 2 -->
+                    <div class="curso-slide">
+                    <img src="cursos/img/electronica.png" alt="Curso Electrónica">
+                    <h3>Electrónica</h3>
+                    <p>Circuitos, robótica e automação.</p>
+                    <a href="#modal2" class="mais-info">mais info</a>
+                    </div>
 
-        <!-- Curso 1 -->
-        <div class="curso-slide">
-        <img src="cursos/img/informatica.jpg" alt="Curso Informática">
-        <h3>Informática</h3>
-        <p>Programação, redes e sistemas.</p>
-        <a href="#modal1" class="mais-info">mais info</a>
-        </div>
+                    <!-- Curso 3 -->
+                    <div class="curso-slide">
+                    <img src="cursos/img/multimedia.png" alt="Curso Multimédia">
+                    <h3>Multimédia</h3>
+                    <p>Design, vídeo e produção digital.</p>
+                    <a href="#modal3" class="mais-info">mais info</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Curso 2 -->
-        <div class="curso-slide">
-        <img src="cursos/img/electronica.png" alt="Curso Electrónica">
-        <h3>Electrónica</h3>
-        <p>Circuitos, robótica e automação.</p>
-        <a href="#modal2" class="mais-info">mais info</a>
-        </div>
+            <!-- MODAIS DOS CURSOS -->
+            <div id="modal1" class="modal-curso">
+                <div class="modal-conteudo-curso">
+                    <a href="#" class="fechar">×</a>
+                    <img src="cursos/img/informatica.jpg" alt="">
+                    <h2>Curso de Informática</h2>
+                    <p>O curso de Informática do ITEL aborda programação, desenvolvimento de software, redes de computadores, segurança digital e soluções inovadoras.</p>
+                </div>
+            </div>
 
-        <!-- Curso 3 -->
-        <div class="curso-slide">
-        <img src="cursos/img/multimedia.png" alt="Curso Multimédia">
-        <h3>Multimédia</h3>
-        <p>Design, vídeo e produção digital.</p>
-        <a href="#modal3" class="mais-info">mais info</a>
-        </div>
+            <div id="modal2" class="modal-curso">
+                <div class="modal-conteudo-curso">
+                    <a href="#" class="fechar">×</a>
+                    <img src="cursos/img/electronica.png" alt="">
+                    <h2>Curso de Electrónica</h2>
+                    <p>Foca circuitos, automação, robótica, sistemas inteligentes e projetos de engenharia eletrónica aplicada.</p>
+                </div>
+            </div>
 
-
-
-    </div>
-</div>
-
-<!-- MODAIS DOS CURSOS -->
-<div id="modal1" class="modal-curso">
-  <div class="modal-conteudo-curso">
-    <a href="#" class="fechar">×</a>
-    <img src="cursos/img/informatica.jpg" alt="">
-    <h2>Curso de Informática</h2>
-    <p>O curso de Informática do ITEL aborda programação, desenvolvimento de software, redes de computadores, segurança digital e soluções inovadoras.</p>
-  </div>
-</div>
-
-<div id="modal2" class="modal-curso">
-  <div class="modal-conteudo-curso">
-    <a href="#" class="fechar">×</a>
-    <img src="cursos/img/electronica.png" alt="">
-    <h2>Curso de Electrónica</h2>
-    <p>Foca circuitos, automação, robótica, sistemas inteligentes e projetos de engenharia eletrónica aplicada.</p>
-  </div>
-</div>
-
-<div id="modal3" class="modal-curso">
-  <div class="modal-conteudo-curso">
-    <a href="#" class="fechar">×</a>
-    <img src="cursos/img/multimedia.png" alt="">
-    <h2>Curso de Multimédia</h2>
-    <p>Desenvolve competências em design gráfico, edição de vídeo, animação, fotografia e produção digital criativa.</p>
-  </div>
-</div>
+            <div id="modal3" class="modal-curso">
+                <div class="modal-conteudo-curso">
+                    <a href="#" class="fechar">×</a>
+                    <img src="cursos/img/multimedia.png" alt="">
+                    <h2>Curso de Multimédia</h2>
+                    <p>Desenvolve competências em design gráfico, edição de vídeo, animação, fotografia e produção digital criativa.</p>
+                </div>
+            </div>
 
 
-</section>
+        </section>
 
         <section id="noticias" class="secao secao-noticias">
             <div>
@@ -212,105 +184,122 @@
 
         
        <section class="actividades" id="actividades">
+            <!-- Título da Secção -->
+            <h2>Actividades</h2>
+            <p class="subtitle">
+                Acompanhe as nossas atividades interativas e formadoras do saber
+            </p>
 
-    <!-- Título da Secção -->
-    <h2>Actividades</h2>
-    <p class="subtitle">
-        Acompanhe as nossas atividades interativas e formadoras do saber
-    </p>
+            <!-- Carrossel -->
+            <div class="carousel">
 
-    <!-- Carrossel -->
-    <div class="carousel">
+                <div class="cards-container">
 
-        <div class="cards-container">
+                    <div class="card">
+                        <img src="Actividades/fititel/544825075_1218911470279845_1274962918031670438_n.jpg" alt="Fititel">
+                        <h3>Fititel</h3>
+                        <p>Evento de tecnologia e inovação do ITEL que reúne estudantes e projetos criativos.</p>
+                    </div>
 
-            <div class="card">
-                <img src="Actividades/fititel/544825075_1218911470279845_1274962918031670438_n.jpg" alt="Fititel">
-                <h3>Fititel</h3>
-                <p>Evento de tecnologia e inovação do ITEL que reúne estudantes e projetos criativos.</p>
+                    <div class="card">
+                        <img src="Actividades/seman_info/capainfo.jpg" alt="Semana de Informática">
+                        <h3>Semana de Informática</h3>
+                        <p>Workshops de programação, sistemas e novas tecnologias.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/Seman_ele/capsemanaeele.jpg" alt="Semana de Electrónica">
+                        <h3>Semana de Electrónica</h3>
+                        <p>Projetos de circuitos, robótica e inovação tecnológica.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/sema_mult/487853320_1090563743114619_5174947730304767502_n.jpg" alt="Semana de Multimédia">
+                        <h3>Semana de Multimédia</h3>
+                        <p>Apresentação de trabalhos de design, vídeo e áudio.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/sexta_cultural/Amor.jpg" alt="Sexta Cultural">
+                        <h3>Sexta Cultural</h3>
+                        <p>Eventos culturais com música, dança e arte.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/itelsolidario/487826390_1088875983283395_3658495766381052444_n (1).jpg" alt="ITEL Solidário">
+                        <h3>ITEL Solidário</h3>
+                        <p>Ações sociais e comunitárias promovidas pelos estudantes.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/futitel/capa.jpg" alt="Futebol">
+                        <h3>Futebol</h3>
+                        <p>Competições desportivas entre estudantes do ITEL.</p>
+                    </div> <div class="card">
+                        <img src="Actividades/fititel/544825075_1218911470279845_1274962918031670438_n.jpg" alt="Fititel">
+                        <h3>Fititel</h3>
+                        <p>Evento de tecnologia e inovação do ITEL que reúne estudantes e projetos criativos.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/seman_info/capainfo.jpg" alt="Semana de Informática">
+                        <h3>Semana de Informática</h3>
+                        <p>Workshops de programação, sistemas e novas tecnologias.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/Seman_ele/capsemanaeele.jpg" alt="Semana de Electrónica">
+                        <h3>Semana de Electrónica</h3>
+                        <p>Projetos de circuitos, robótica e inovação tecnológica.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/sema_mult/487853320_1090563743114619_5174947730304767502_n.jpg" alt="Semana de Multimédia">
+                        <h3>Semana de Multimédia</h3>
+                        <p>Apresentação de trabalhos de design, vídeo e áudio.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/sexta_cultural/Amor.jpg" alt="Sexta Cultural">
+                        <h3>Sexta Cultural</h3>
+                        <p>Eventos culturais com música, dança e arte.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/itelsolidario/487826390_1088875983283395_3658495766381052444_n (1).jpg" alt="ITEL Solidário">
+                        <h3>ITEL Solidário</h3>
+                        <p>Ações sociais e comunitárias promovidas pelos estudantes.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Actividades/futitel/capa.jpg" alt="Futebol">
+                        <h3>Futebol</h3>
+                        <p>Competições desportivas entre estudantes do ITEL.</p>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <img src="Actividades/seman_info/capainfo.jpg" alt="Semana de Informática">
-                <h3>Semana de Informática</h3>
-                <p>Workshops de programação, sistemas e novas tecnologias.</p>
-            </div>
+        </section>
 
-            <div class="card">
-                <img src="Actividades/Seman_ele/capsemanaeele.jpg" alt="Semana de Electrónica">
-                <h3>Semana de Electrónica</h3>
-                <p>Projetos de circuitos, robótica e inovação tecnológica.</p>
-            </div>
 
-            <div class="card">
-                <img src="Actividades/sema_mult/487853320_1090563743114619_5174947730304767502_n.jpg" alt="Semana de Multimédia">
-                <h3>Semana de Multimédia</h3>
-                <p>Apresentação de trabalhos de design, vídeo e áudio.</p>
-            </div>
-
-            <div class="card">
-                <img src="Actividades/sexta_cultural/Amor.jpg" alt="Sexta Cultural">
-                <h3>Sexta Cultural</h3>
-                <p>Eventos culturais com música, dança e arte.</p>
-            </div>
-
-            <div class="card">
-                <img src="Actividades/itelsolidario/487826390_1088875983283395_3658495766381052444_n (1).jpg" alt="ITEL Solidário">
-                <h3>ITEL Solidário</h3>
-                <p>Ações sociais e comunitárias promovidas pelos estudantes.</p>
-            </div>
-
-            <div class="card">
-                <img src="Actividades/futitel/capa.jpg" alt="Futebol">
-                <h3>Futebol</h3>
-                <p>Competições desportivas entre estudantes do ITEL.</p>
-            </div> <div class="card">
-                <img src="Actividades/fititel/544825075_1218911470279845_1274962918031670438_n.jpg" alt="Fititel">
-                <h3>Fititel</h3>
-                <p>Evento de tecnologia e inovação do ITEL que reúne estudantes e projetos criativos.</p>
-            </div>
-
-            <div class="card">
-                <img src="Actividades/seman_info/capainfo.jpg" alt="Semana de Informática">
-                <h3>Semana de Informática</h3>
-                <p>Workshops de programação, sistemas e novas tecnologias.</p>
-            </div>
-
-            <div class="card">
-                <img src="Actividades/Seman_ele/capsemanaeele.jpg" alt="Semana de Electrónica">
-                <h3>Semana de Electrónica</h3>
-                <p>Projetos de circuitos, robótica e inovação tecnológica.</p>
-            </div>
-
-            <div class="card">
-                <img src="Actividades/sema_mult/487853320_1090563743114619_5174947730304767502_n.jpg" alt="Semana de Multimédia">
-                <h3>Semana de Multimédia</h3>
-                <p>Apresentação de trabalhos de design, vídeo e áudio.</p>
-            </div>
-
-            <div class="card">
-                <img src="Actividades/sexta_cultural/Amor.jpg" alt="Sexta Cultural">
-                <h3>Sexta Cultural</h3>
-                <p>Eventos culturais com música, dança e arte.</p>
-            </div>
-
-            <div class="card">
-                <img src="Actividades/itelsolidario/487826390_1088875983283395_3658495766381052444_n (1).jpg" alt="ITEL Solidário">
-                <h3>ITEL Solidário</h3>
-                <p>Ações sociais e comunitárias promovidas pelos estudantes.</p>
-            </div>
-
-            <div class="card">
-                <img src="Actividades/futitel/capa.jpg" alt="Futebol">
-                <h3>Futebol</h3>
-                <p>Competições desportivas entre estudantes do ITEL.</p>
-            </div>
-
+    <!--Galeria-->
+    <section id="galeria" class="secao">
+        <h2>Galeria</h2>
+        <p class="subtitle">Aqui estão algumas fotos nossas</p>
+        <div class="bento-grid">
+            <div class="foto-item grande-v" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/Alunos.jpg" alt=""></div>
+            <div class="foto-item grande-h" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/42 4.jpeg" alt=""></div>
+            <div class="foto-item quadrado" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/Africa Fevereiro8.jpeg" alt=""></div>
+            <div class="foto-item quadrado" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/DG.jpg" alt=""></div>
+            <div class="foto-item grande-h" loading="lazy"><img src="Pagina de Galeria/GaleriaDeImagens/DreamSpace Itel6.jpeg" alt=""></div>
         </div>
+        
+        <button class="botao"><a href="Pagina de Galeria/Galeria.html">Veja Mais fotos</a></button>
+               
+    </section>
 
-    </div>
-
-</section>
 
 <!--Secção Directores-->
 
